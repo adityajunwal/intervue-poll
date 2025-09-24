@@ -8,11 +8,15 @@ const app = express()
 const server = http.createServer(app)
 const io = new Server(server, {
   cors: {
-    origin: "https://intervue-poll-umber.vercel.app/", // replace with your Vercel URL
+    origin: [
+      "https://intervue-poll-umber.vercel.app", // Vercel frontend
+      "http://localhost:5173", // local dev (if needed)
+    ],
     methods: ["GET", "POST"],
     credentials: true
   }
 });
+
 
 
 app.use(express.json())

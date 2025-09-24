@@ -7,8 +7,13 @@ const pollSocket = require("./sockets/pollSocket")
 const app = express()
 const server = http.createServer(app)
 const io = new Server(server, {
-    cors: {origin: "*"}
-})
+  cors: {
+    origin: "https://intervue-poll-umber.vercel.app/", // replace with your Vercel URL
+    methods: ["GET", "POST"],
+    credentials: true
+  }
+});
+
 
 app.use(express.json())
 

@@ -138,7 +138,7 @@ function StudentScreen() {
                                         style={
                                             {
                                                 border: (selectedOption === opt)
-                                                    ? "1px solid black"
+                                                    ? "1px solid #8F64E1"
                                                     : "none"
 
                                             }

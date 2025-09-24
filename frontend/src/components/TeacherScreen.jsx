@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom"
 import { io } from "socket.io-client"
 import "./TeacherScreen.css";
 
-const backend = process.env.BACKEND_URI || "http://localhost:3000"
+const backend = "https://intervue-backend-production.up.railway.app/"
 const socket = io(backend)
 
 function TeacherScreen() {

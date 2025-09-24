@@ -7,6 +7,8 @@ const socket = io("https://intervue-poll-y4pz.onrender.com", {
   transports: ["websocket"],
 });
 
+// const socket = io("http://localhost:3000")
+
 function TeacherScreen() {
     const [question, setQuestion] = useState("");
     const [options, setOptions] = useState(["", ""])

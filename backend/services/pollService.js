@@ -4,7 +4,7 @@ let answeredStudents = new Set()
 let pollTimer = null
 
 function createPoll(question, options, duration = 60) {
-    currentPoll = { question, options, active: true}
+    currentPoll = { question, options, duration, active: true}
     pollResults = {}
     options.forEach(opt => {
         pollResults[opt] = 0

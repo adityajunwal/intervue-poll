@@ -40,6 +40,20 @@ h3{
   animation: spin 1s linear infinite; /* Infinite rotation */
 }
 
+.question-heading{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    font-weight: 600;
+    gap: 40px;
+}
+
+.timer {
+    display: flex;
+    gap: 20px;
+    color: red;
+}
+
 @keyframes spin {
   0%   { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }

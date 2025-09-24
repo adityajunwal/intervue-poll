@@ -3,9 +3,9 @@ import { BrowserRouter } from "react-router-dom"
 import { io } from "socket.io-client"
 import "./TeacherScreen.css";
 
-const backend = "https://intervue-backend-production.up.railway.app/"
-const socket = io(backend)
-
+const socket = io("https://intervue-backend.up.railway.app", {
+  transports: ["websocket"],
+});
 function TeacherScreen() {
     const [question, setQuestion] = useState("");
     const [options, setOptions] = useState(["", ""])

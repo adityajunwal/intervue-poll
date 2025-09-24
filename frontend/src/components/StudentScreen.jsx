@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import "./StudentScreen.css"
 
-const backend = "https://intervue-backend-production.up.railway.app/"
-const socket = io(backend)
+const socket = io("https://intervue-backend.up.railway.app", {
+  transports: ["websocket"],
+});
+
 
 function StudentScreen() {
     const [name, setName] = useState("");

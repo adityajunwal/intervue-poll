@@ -3,7 +3,8 @@ import { BrowserRouter } from "react-router-dom"
 import { io } from "socket.io-client"
 import "./TeacherScreen.css";
 
-const socket = io("http://localhost:3000")
+const backend = process.env.BACKEND_URI || "http://localhost:3000"
+const socket = io(backend)
 
 function TeacherScreen() {
     const [question, setQuestion] = useState("");

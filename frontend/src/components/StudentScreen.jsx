@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import "./StudentScreen.css"
 
-const socket = io("http://localhost:3000");
+const backend = process.env.BACKEND_URI || "http://localhost:3000"
+const socket = io(backend)
 
 function StudentScreen() {
     const [name, setName] = useState("");

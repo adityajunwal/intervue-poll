@@ -210,6 +210,7 @@ function StudentScreen() {
                                 </div>
                             ))}
                         </div>
+                        <div className="loader"></div>
                         <p style={{ fontWeight: "600", marginTop: "20px" }}>Waiting for teacher to ask new question</p>
                     </div>
                 </>

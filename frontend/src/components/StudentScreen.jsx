@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import "./StudentScreen.css"
 
-const socket = io("https://intervue-backend.up.railway.app", {
-  transports: ["polling", "websocket"],
+const socket = io("https://intervue-poll-y4pz.onrender.com", {
+  transports: ["websocket"],
 });
 
 function StudentScreen() {

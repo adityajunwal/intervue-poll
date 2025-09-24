@@ -3,8 +3,8 @@ import { BrowserRouter } from "react-router-dom"
 import { io } from "socket.io-client"
 import "./TeacherScreen.css";
 
-const socket = io("https://intervue-backend.up.railway.app", {
-  transports: ["polling", "websocket"],
+const socket = io("https://intervue-poll-y4pz.onrender.com", {
+  transports: ["websocket"],
 });
 
 function TeacherScreen() {

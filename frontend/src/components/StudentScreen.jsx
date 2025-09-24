@@ -3,9 +3,8 @@ import { io } from "socket.io-client";
 import "./StudentScreen.css"
 
 const socket = io("https://intervue-backend.up.railway.app", {
-  transports: ["websocket"],
+  transports: ["polling", "websocket"],
 });
-
 
 function StudentScreen() {
     const [name, setName] = useState("");

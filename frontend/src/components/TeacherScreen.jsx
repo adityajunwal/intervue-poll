@@ -4,8 +4,9 @@ import { io } from "socket.io-client"
 import "./TeacherScreen.css";
 
 const socket = io("https://intervue-backend.up.railway.app", {
-  transports: ["websocket"],
+  transports: ["polling", "websocket"],
 });
+
 function TeacherScreen() {
     const [question, setQuestion] = useState("");
     const [options, setOptions] = useState(["", ""])

@@ -1,5 +1,8 @@
 {
   "build": {
-    "root": "backend"
+    "builder": "node"
+  },
+  "deploy": {
+    "start": "node index.js"
   }
 }
